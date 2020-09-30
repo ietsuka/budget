@@ -1,23 +1,18 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Dashboard</div>
-
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    You are logged in!
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<article class="left-side">
+  <section class="balanceSheet card">
+    <h1 class="card-title">残高</h1>
+    <h2 class="card-content">2000円</h2>
+  </section>
+  <section class="calenderSheet card">
+    <h1 class="card-title">10月</h1>
+  </section>
+</article>
+<article class="right-side">
+  <section class="historySheet card">
+    <h1 class="card-title">履歴</h1>
+  </section>
+</article>
 @endsection
